@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 15px;
+  background-color: yellow;
+  flex-direction: column;
+}
+header .logo {
+  font-size: 2rem;
+}
+header .logo + nav > ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.45rem;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+main {
+  margin: 0;
+}
+main section h2 {
+  position: sticky;
+  top: 0%;
+  background: #0ff;
+  z-index: 1;
+}
+main section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section .gallery img {
+  width: 33.3333333333%;
+  height: auto;
+}
+main .fruit-hover p {
+  padding: 10px 0;
+}
+main .fruit-hover figure {
+  position: relative;
+  margin: 0;
+  width: fit-content;
+  z-index: 0;
+}
+main .fruit-hover figure img {
+  width: 75%;
+  height: 75%;
+}
+main .fruit-hover figure figcaption {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  background: #f00;
+  display: none;
+  color: #fff;
+}
+main .fruit-hover figure img:hover + figcaption {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+main .back-to-top-btn {
+  position: fixed;
+  background-color: #000;
+  right: 0;
+  bottom: 0;
+  padding: 5px 5px;
+}
+main .back-to-top-btn a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
